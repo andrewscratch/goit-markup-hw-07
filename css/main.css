@@ -467,7 +467,7 @@ ul {
 .examples-item:hover, .examples-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   transform: translateY(0);
-  transition: var(--timing) var(--cubic) linear;
+  transition: var(--timing) linear;
   cursor: pointer;
 }
 
@@ -495,12 +495,6 @@ ul {
   height: 100%;
   transform: translateY(100%);
   transition: transform var(--timing) var(--cubic);
-}
-
-.examples-item, .examples-text:hover {
-  transform: translateY(0);
-  transition: transform 250ms linear;
-  cursor: pointer;
 }
 
 .examples-subtitle {
