@@ -34,10 +34,11 @@
     transition-property: fill, background-color;
     transition-duration: var(--timing);
     transition-timing-function: var(--cubic);
-  }
-  
-  .clients-link:hover,
-  .clients-link:focus {
+    &:hover,
+  &:focus {
     fill: currentColor;
     border-color: currentColor;
   }
+  }
+  
+  

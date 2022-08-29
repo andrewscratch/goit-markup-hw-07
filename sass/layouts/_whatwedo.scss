@@ -2,7 +2,7 @@
   padding-top: 0;
 }
 
-.what-we-do-title {
+.what-we-do__title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -10,7 +10,7 @@
   margin-bottom: 50px;
 }
 
-.what-we-do-list {
+.what-we-do__list {
   display: flex;
   column-gap: 30px;
 }
@@ -30,7 +30,7 @@
   bottom: 0;
   right: 0;
 }
-.what-we-can-do-item {
+.what-we-can-do__item {
   flex-basis: calc((100% - 60px) / 3);
   position: relative;
   display: flex;

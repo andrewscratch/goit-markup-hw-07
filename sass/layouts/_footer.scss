@@ -6,6 +6,11 @@
   .footer {
     display: flex;
     align-items: baseline;
+    .join-list {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
   }
   
   .left-footer {
@@ -35,11 +40,7 @@
     color: rgba(255, 255, 255, 0.6);
   }
   
-  .join-list {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
+  
   
   .join-list .soc-link {
     display: flex;
@@ -87,26 +88,28 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: var(--normal-color);
-  
     transition: border-color var(--timing) var(--cubic);
+    &:focus {
+      border-color: var(--normal-color);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+    &:hover {
+      border-color: var(--accent-color);
+    }
+   &::placeholder {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+    }
   }
   
-  .send-input:focus {
-    border-color: var(--normal-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
   
-  .send-input:hover {
-    border-color: var(--accent-color);
-  }
   
-  .send-input::placeholder {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-  }
+  
+  
+  
   
   .send-button {
     font-weight: 700;
@@ -121,22 +124,20 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+    &:hover {
+      background-color: var(--hover-color);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
   }
   
-  .send-button:hover {
-    background-color: var(--hover-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
+ 
   
   .send-wrap {
     display: flex;
     gap: 12px;
   }
   
-  .join-list .soc-link:hover,
-  .join-list .soc-link:focus {
-    background-color: currentColor;
-  }
+  
   
   
   .submit-button {
@@ -173,26 +174,28 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: var(--normal-color);
-  
     transition: border-color var(--transition-timing);
+    &::placeholder {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+    }
+    &:focus {
+      border-color: var(--normal-color);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+    &:hover {
+      border-color: var(--accent-color);
+    }
+    
   }
   
-  .send-input:focus {
-    border-color: var(--normal-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
   
-  .send-input:hover {
-    border-color: var(--accent-color);
-  }
   
-  .send-input::placeholder {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-  }
+  
+  
   
   .send-button {
     font-weight: 700;
@@ -207,16 +210,17 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+    &:hover {
+      background-color: var(--hover-color);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
   }
   
   .send-icon {
     fill: #ffffff;
   }
   
-  .send-button:hover {
-    background-color: var(--hover-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
+  
   
   .send-wrap {
     display: flex;
