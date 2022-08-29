@@ -9,9 +9,17 @@
   }
   
   .logo-dark {
-    color: #000000;
+    
   }
   
   .logo-light {
-    color: var(--normal-color);
+    
+  }
+
+  .logo--color-light {
+    color: #ffffff;
+  }
+
+  .logo--color-dark {
+    color:#000000;
   }

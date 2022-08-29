@@ -146,12 +146,12 @@ ul {
   text-decoration: none;
 }
 
-.logo-dark {
-  color: #000000;
+.logo--color-light {
+  color: #ffffff;
 }
 
-.logo-light {
-  color: var(--normal-color);
+.logo--color-dark {
+  color: #000000;
 }
 
 .hero {
