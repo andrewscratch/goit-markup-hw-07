@@ -1,15 +1,15 @@
-.clients-list {
+.clients__list {
     display: flex;
     gap: 30px;
     justify-content: center;
   }
   
-  .clients-item {
+  .clients__item {
     width: 170px;
     height: 92px;
   }
   
-  .clients-title {
+  .clients__title {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -17,12 +17,12 @@
     margin-bottom: 50px;
   }
   
-  .clients-item {
+  .clients__item {
     width: 170px;
     height: 92px;
   }
   
-  .clients-link {
+  .clients__link {
     display: flex;
     align-items: center;
     justify-content: center;

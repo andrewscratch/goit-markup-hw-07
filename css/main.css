@@ -378,18 +378,18 @@ ul {
   background-color: currentColor;
 }
 
-.clients-list {
+.clients__list {
   display: flex;
   gap: 30px;
   justify-content: center;
 }
 
-.clients-item {
+.clients__item {
   width: 170px;
   height: 92px;
 }
 
-.clients-title {
+.clients__title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -397,12 +397,12 @@ ul {
   margin-bottom: 50px;
 }
 
-.clients-item {
+.clients__item {
   width: 170px;
   height: 92px;
 }
 
-.clients-link {
+.clients__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -415,7 +415,7 @@ ul {
   transition-duration: var(--timing);
   transition-timing-function: var(--cubic);
 }
-.clients-link:hover, .clients-link:focus {
+.clients__link:hover, .clients__link:focus {
   fill: currentColor;
   border-color: currentColor;
 }
