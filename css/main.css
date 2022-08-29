@@ -262,8 +262,8 @@ ul {
   color: var(--minor-color);
 }
 
-.what-we-do-section {
-  padding-top: 0;
+.section {
+  padding-top: 0px;
 }
 
 .what-we-do__title {
@@ -307,6 +307,11 @@ ul {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.section--no-padding {
+  padding-top: 0;
+  padding-bottom: 94px;
 }
 
 .our-team {
@@ -461,6 +466,14 @@ ul {
 }
 .examples-item:hover, .examples-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  transform: translateY(0);
+  transition: var(--timing) var(--cubic) linear;
+  cursor: pointer;
+}
+
+.examples-item:hover .examples-text {
+  transform: translateY(0);
+  transition: transform 250ms linear;
   cursor: pointer;
 }
 
@@ -483,7 +496,8 @@ ul {
   transform: translateY(100%);
   transition: transform var(--timing) var(--cubic);
 }
-.examples-item:hover .examples-text {
+
+.examples-item, .examples-text:hover {
   transform: translateY(0);
   transition: transform 250ms linear;
   cursor: pointer;
@@ -612,6 +626,7 @@ body {
 .send-paragraph {
   margin-bottom: 20px;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
